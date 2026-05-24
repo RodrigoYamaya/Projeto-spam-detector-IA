@@ -49,8 +49,17 @@ def analisar_texto(requisicao: EmailRequest):
     previsao = modelo_ia.predict([requisicao.texto])[0]
     
     # Aqui vamos criar uma variavel e associar ela o resultado Formato.Se e "spam" ou "HAM". Qualquer coisa ser nao form "SPAM" Automaticamente e "HAM"
-    resultado = "SPAM" if previsao == 1 else "HAM"
+
+    print(f"---> ALERTA DE DEBUG: A IA respondeu: {previsao}")
     
+    # Tratamento à prova de falhas: verifica se a resposta é 1, "spam" ou "SPAM"
+    previsao_str = str(previsao).lower()
+    
+    if previsao == 1 or previsao_str == "spam":
+        resultado = "SPAM"
+    else:
+        resultado = "HAM"
+           
     # Aqui iremos Devolver o JSON(Json e basicamente e padrao de comunicação entre diferentes tipos de sistema, que  bastante usado na internet)
     # vai devolver a resposta dessa comunicação json da resposta.
     return {

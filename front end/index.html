@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureMail - Análise de Ameaças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="header">
+            <div class="header-icon">🛡️</div>
+            <div class="header-title">
+                <h1>SecurityMail Gateway</h1>
+                <p>Módulo de Análise de Ameaças em Tempo Real</p>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="textoEmail">Conteúdo interceptado (Raw Text):</label>
+            <textarea id="textoEmail" spellcheck="false" placeholder="Cole o payload ou conteúdo do e-mail suspeito aqui para varredura..."></textarea>
+        </div>
+
+        <button id="btnAnalisar" onclick="analisarEmail()">
+            <span id="btnText">Iniciar Varredura de Segurança</span>
+        </button>
+
+        <div id="resultado-container">
+            <div class="result-title" id="resultado-titulo"></div>
+            <p class="result-details" id="resultado-detalhe"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
