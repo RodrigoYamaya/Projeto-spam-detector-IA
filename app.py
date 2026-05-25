@@ -16,7 +16,6 @@ app.add_middleware(
 )
 
 # Carrega a sua IA que fizemos o treinamento no google colab para a memória do servidor.
-# OBS: O carregamento agora é instantâneo pois toda a limpeza do texto já está embutida dentro do arquivo .pk!
 print("Carregando o modelo de IA...")
 modelo_ia = joblib.load("modelo_ia_spam_Definitivo.pk")
 print("Modelo carregado com sucesso!")
