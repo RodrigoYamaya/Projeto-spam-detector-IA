@@ -5,6 +5,3 @@ pandas==3.0.0
 joblib==1.5.3
 pydantic==2.12.5
 
-O uvicorn é o servidor que faz o FastAPI rodar na porta 8000).
-
-iniciar servidor back and fastapi comando: python -m uvicorn app:app --reload

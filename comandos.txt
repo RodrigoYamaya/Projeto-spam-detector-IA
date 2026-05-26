@@ -1,0 +1,8 @@
+O uvicorn é o servidor que faz o FastAPI rodar na porta 8000).
+
+Instalar as bibliotecas comando: pip install fastapi==0.128.1 uvicorn==0.40.0 scikit-learn==1.8.0 pandas==3.0.0 joblib==1.5.3 pydantic==2.12.5
+
+iniciar servidor back and fastapi comando: python -m uvicorn app:app --reload
+
+
+Link google colab : https://colab.research.google.com/drive/1AyK9bTWvx4v3MjTH7eabW2GwQRX92WGW?usp=sharing

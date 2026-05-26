@@ -34,7 +34,7 @@ async function analisarEmail() {
         // Vamos Atualizar  a interface com termos de segurança
         if (dados.classificacao === "SPAM") {
             containerResultado.className = "status-spam";
-            tituloResultado.innerHTML = `⚠️ AMEAÇA DETECTADA (Phishing/Spam)`;
+            tituloResultado.innerHTML = `⚠️ AMEAÇA DETECTADA (Spam)`;
             detalheResultado.innerHTML = `A inteligência artificial identificou padrões maliciosos severos no texto analisado. Ação recomendada: Quarentena e bloqueio do remetente.`;
         } else {
             containerResultado.className = "status-ham";
