@@ -18,3 +18,12 @@ python -m pip install -r requirements.txt
 # Iniciar O servidor Backend
 
 python -m uvicorn app:app --reload
+
+
+# Participantes do projeto
+
+Componente 1: Rodrigo Yamaya Gonçalves/ 1262324774
+Componente 2: Lucas Ottvagen / RA: 12624117292 
+ Componente 3: Luiz Felippe Almeida Veloso / 
+ Componente 4: David Antony Gouveia de Souza / RA: 1262429556
+Componente 5: Alan Pereira de Lima / RA: 1262422622 
