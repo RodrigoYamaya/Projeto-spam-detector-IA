@@ -9,3 +9,12 @@ Uma API REST desenvolvida em Python para a classificação de mensagens de texto
 * **Servidor:** Uvicorn
 * **Machine Learning:** Scikit-Learn (`LinearSVC`, `CountVectorizer`, `TfidfTransformer`)
 * **Manipulação de Dados:** Pandas
+
+# Comando para Instalar as dependências
+
+python -m pip install -r requirements.txt
+
+
+# Iniciar O servidor Backend
+
+python -m uvicorn app:app --reload
